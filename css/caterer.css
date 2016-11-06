@@ -1,0 +1,26 @@
+a {color: #d56900;}
+
+.gallery-container,
+.gallery-arrow { background-color: #f5f7fc; } 
+
+.rslides1_tabs li a:hover, .rslides1_tabs .rslides_here a { background:#d56900; color: #d56900;}
+
+.company-info, 
+.services ul li.active { background: #e7eef8;}
+.services { background: #d9e5f5 ;}
+
+.services ul li.business-info {border-top-color:#e7eef8; }
+
+.form-container { background: #1c2930;}
+.contact-us-popout {background: #151e24;}
+.row-fluid .form {background: #333f45;}
+.contact-form .contact-form-footer .button {background: #d56900;}
+
+@media (max-width: 767px) {
+	.location {
+		background-color: #f5f7fc;
+	}
+	.company-info .services ul li.active {
+		border-left: 6px solid #d56900;
+	}
+}

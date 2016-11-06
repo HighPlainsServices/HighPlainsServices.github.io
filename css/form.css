@@ -1,0 +1,121 @@
+/*=== Validator Essentials ===*/
+
+/* Smooth CSS3 Transitions */
+.field-wrapper,
+.field-wrapper:after,
+.yv-formfield,
+.yv-formfield .fieldCaption {
+	-webkit-transition: all 0.2s ease-in; 
+	-moz-transition: all 0.2s ease-in; 
+	-ms-transition: all 0.2s ease-in; 
+	-o-transition: all 0.2s ease-in; 
+	transition: all 0.2s ease-in;
+}
+
+/* Form Field Style */
+.yv-formfield {
+	position: relative; 
+	display:block;
+}
+
+.yv-formfield.showMessage {
+	padding-bottom:12px; 
+	margin-bottom:15px;
+}
+.yv-formfield .field-wrapper {
+	border:none; 
+}
+.yv-formfield .field-wrapper,
+.yv-formfield input, 
+.yv-formfield textarea, 
+.yv-formfield select {z-index: 5}
+
+/* Checkbox field */
+.yv-formfield.radioCheckbox,
+.yv-formfield.radioCheckbox.valid {border:1px solid transparent; background:none;}
+
+.yv-formfield .fieldCaption {
+	position: absolute; 
+	bottom:0;
+	left:5px; 
+	z-index: 4; 
+	font-size: 12px; 
+	font-weight:normal; 
+	opacity:0;
+	filter: alpha(opacity=0);
+}
+.yv-formfield.showMessage .fieldCaption {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+	
+/* HelperText */
+
+/* HelpTip */
+.yv-formfield .helpTip {background-image:url(helpTip.png); position: absolute; top:4px; right:4px; width:12px; height:12px;  z-index: 4;}
+.yv-formfield .helpTip .helpTipContent {z-index:20; color:#4D4D4F; position:absolute; top:0; left:0; font-size:11px; padding:10px 12px; width:110px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; border:1px solid #8F8F8F; line-height:15px; box-shadow:0 0 6px #b8b8b8; -moz-box-shadow:0 0 6px #b8b8b8; -webkit-box-shadow:0 0 6px #b8b8b8; display:none; 
+	background: -moz-linear-gradient(#F8F8F8,#EFEFF0), #EFEFF0; 
+	background: -webkit-linear-gradient(#F8F8F8,#EFEFF0), #EFEFF0;
+	background: -ms-linear-gradient(#F8F8F8,#EFEFF0), #EFEFF0;
+	background: -o-linear-gradient(#F8F8F8,#EFEFF0), #EFEFF0;
+	background: linear-gradient(#F8F8F8,#EFEFF0), #EFEFF0;
+	background-color: #EFEFF0;
+}
+.yv-formfield .helpTip-pointer {background-image:url(helpTip-pointer.png); display:block; width:14px; height:14px; position:absolute; right:14px; bottom:-12px;}
+
+/* Validation Icons */
+.yv-formfield .fieldIcon{
+	position: absolute;
+	top: 6px;
+	right: 5px;
+	opacity: 0;
+	z-index: 100;
+}
+.yv-formfield.showIcon .fieldIcon {
+	opacity: 1;
+}
+
+/* Focus */
+.field-wrapper.focus,
+.field-wrapper.focus:after,
+.yv-formfield.focus,
+.yv-formfield.focus .field-wrapper {border-color:#777;}
+
+/* Invalid */
+.yv-formfield.invalid {
+	color:#be0606; 
+	background-color:#fbded7;
+}
+.yv-formfield.invalid input[type=text]:focus, 
+.yv-formfield.invalid input[type=email]:focus,
+.yv-formfield.invalid input[type=tel]:focus,
+.yv-formfield.invalid textarea:focus {
+	border:0;
+}
+.yv-formfield.invalid .fieldIcon {
+	color: #be0606;
+}
+
+/* Valid */
+.yv-formfield.valid {border-color:#7bb111; box-shadow-color:#7bb111; -moz-box-shadow-color:#7bb111; -webkit-box-shadow-color:#7bb111;}
+.yv-formfield.valid input, 
+.yv-formfield.valid textarea, 
+.yv-formfield.valid select, 
+.yv-formfield.valid .field-wrapper {border-color:#7bb111}
+.yv-formfield.valid .fieldIcon {
+	color: #2f8a2b;
+}
+
+/* Required Fields */
+.yv-required-field {margin-left:3px;}
+
+/*=== END VALIDATOR ESSENTIALS ===*/
+
+/*=== Status Messages ===*/
+
+	.statusMessage.alert {background: #fff8be; border-color:#d2c23a; }
+		.statusMessage.alert:before {content:''; color:#d2c23a; }
+	.statusMessage.error {background: #fde7e4; border-color:#bb3222; }
+		.statusMessage.error:before {content:''; color:#bb3222; }
+		
+#alertMessage { top: 10px; left: 0; z-index: 5000; }

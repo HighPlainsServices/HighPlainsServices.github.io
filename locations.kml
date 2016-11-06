@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+    <Document>
+        <name>Locations for High Plains Services</name>
+        <atom:author>
+            <atom:name>High Plains Services</atom:name>
+        </atom:author>
+        <atom:link rel="related" href="http://www.dummydomain.com" />
+        <Folder>
+            <Placemark>
+                <name><![CDATA[High Plains Services]]></name>
+                <address><![CDATA[982 S Simms St, Lakewood, CO, 80228, United States]]></address>
+                <description><![CDATA[]]></description>
+                <Point>
+                    <coordinates>-105.1289064, 39.698917, 0</coordinates>
+                </Point>
+            </Placemark>
+        </Folder>
+    </Document>
+</kml>
